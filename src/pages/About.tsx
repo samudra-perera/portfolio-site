@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import BackToMainButton from "../components/BackToMainButton";
 import Container from "../components/Container";
-import resumePDF from "../assets/Samudra_Perera_Resume_2024.pdf";
+
+const AboutLinks = [
+  { name: "Resume", href: "/Samudra_Perera_Resume_2024.pdf" },
+  { name: "Github", href: "https://github.com/samudra-perera" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/samudraperera/" },
+  { name: "Twitter", href: "https://twitter.com/theRealSamudra" },
+];
 
 const About = () => {
   return (
@@ -33,34 +39,24 @@ const About = () => {
           now
         </Link>
       </p>
-      <h3 className="font-bold text-2xl tracking-wide text-slate-50">
+      <h3 className="font-bold text-2xl tracking-wide text-slate-50 pb-2">
         Contact
       </h3>
       <ul className="text-slate-100 decoration-white list-disc pl-8">
-        <li>
-          <a
-            href="/Samudra_Perera_Resume_2024.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/samudra-perera" target="_blank">
-            Github
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/samudraperera/" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/theRealSamudra" target="_blank">
-            Twitter
-          </a>
-        </li>
+        {AboutLinks.map((link) => {
+          return (
+            <li className="pb-2">
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-300"
+              >
+                {link.name}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </Container>
   );

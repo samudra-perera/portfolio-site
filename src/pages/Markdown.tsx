@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import BackToMainButton from "../components/BackToMainButton";
 
-type Props = {};
-
-const MarkdownComponent = (props: Props) => {
+const MarkdownComponent = () => {
   const { markdown } = useParams();
   const [content, setContent] = useState<string>("");
 

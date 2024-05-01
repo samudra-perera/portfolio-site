@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
 import Container from "./components/Container";
 import ProjectsList from "./components/ProjectsList";
-import projectData from "./data/projects/projects";
 import WritingList from "./components/WritingList";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <Container>
       <h2 className="font-bold text-4xl tracking-wide text-slate-50 pb-8">
