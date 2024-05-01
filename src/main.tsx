@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About";
 import "./index.css";
 import MarkdownComponent from "./pages/Markdown";
+import Now from "./pages/Now";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/:markdown",
     element: <MarkdownComponent />,
+  },
+  {
+    path: "/now",
+    element: <Now />,
   },
   {
     path: "*",

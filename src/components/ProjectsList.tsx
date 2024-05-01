@@ -5,12 +5,18 @@ type Props = {};
 
 const ProjectsList = (props: Props) => {
   return (
-    <ul className="pb-8">
+    <ul className="pb-8 pl-8 list-disc text-slate-100">
       {ProjectData.map((project) => (
-        <li>
-          <Link key={project.name} to={`/${project.url}`}>
+        <li className="text-white-100 font-light p-1">
+          <Link
+            className="text-sky-300 underline pr-1 font-normal"
+            key={project.name}
+            to={`/${project.url}`}
+          >
             {project.name}
           </Link>
+          {" - "}
+          {project.description}
         </li>
       ))}
     </ul>
