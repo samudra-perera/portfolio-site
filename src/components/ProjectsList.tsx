@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import ProjectData from "../data/projects/projects";
 
-type Props = {};
-
-const ProjectsList = (props: Props) => {
+const ProjectsList = () => {
   return (
     <ul className="pb-8 pl-8 list-disc text-slate-100">
       {ProjectData.map((project) => (

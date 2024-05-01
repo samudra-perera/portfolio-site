@@ -1,9 +1,13 @@
-import React from "react";
+import BackToMainButton from "../components/BackToMainButton";
+import Container from "../components/Container";
 
-type Props = {};
-
-const Now = (props: Props) => {
-  return <div>Now</div>;
+const Now = () => {
+  return (
+    <Container>
+      <BackToMainButton />
+      Now
+    </Container>
+  );
 };
 
 export default Now;
