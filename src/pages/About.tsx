@@ -26,17 +26,23 @@ const About = () => {
         >
           University of Waterloo.
         </a>{" "}
-        Before I ventured on this developer journey I was a Civil Engineer for a
-        few years.
+        Before I ventured into the world of tech I was a Civil Engineer for a
+        few years working on major infrastruture projects.
       </p>
       <p className="text-slate-100 pb-4">
-        Outside of my professional life, I love spending time with freinds,
-        working out, playing soccer blah blah blah
+        Outside of my professional life, I'm passionate about staying active and
+        embracing the joys of life with friend and family. I find balance by
+        regularly hitting the gym, playing soccer with the boys or going for
+        runs.
+        <br />
+        <br />
+        Im also an avid reader, and currently trying to reconnect with my
+        creative side through different forms of digital and physical mediums.
       </p>
       <p className="text-slate-100 pb-4">
-        This is what I am up to{" "}
+        See what I am up to{" "}
         <Link to="/now" className="underline text-sky-300">
-          now
+          now.
         </Link>
       </p>
       <h3 className="font-bold text-2xl tracking-wide text-slate-50 pb-2">
