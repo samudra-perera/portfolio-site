@@ -5,7 +5,7 @@ import ErrorPage from "./pages/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About";
 import "./index.css";
-import Project from "./pages/Project";
+import Markdown from "./pages/Markdown";
 
 const router = createBrowserRouter([
   {
@@ -17,12 +17,12 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "*",
-    element: <ErrorPage />,
+    path: "/:markdown",
+    element: <Markdown />,
   },
   {
-    path: "/:projectName",
-    element: <Project />,
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
 

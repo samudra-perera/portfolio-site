@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Container from "./components/Container";
 import ProjectsList from "./components/ProjectsList";
+import projectData from "./data/projects/projects";
+import WritingList from "./components/WritingList";
+
 type Props = {};
 
 const Home = (props: Props) => {
@@ -30,6 +33,8 @@ const Home = (props: Props) => {
       </p>
       <h3 className="text-slate-100 text-2xl font-bold pb-2">Projects</h3>
       <ProjectsList />
+      <h3 className="text-slate-100 text-2xl font-bold pb-2">Writing</h3>
+      <WritingList />
     </Container>
   );
 };
