@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import Markdown from "markdown-to-jsx";
 
 type Props = {};
 
-const Markdown = (props: Props) => {
+const MarkdownComponent = (props: Props) => {
   const { markdown } = useParams();
   const [content, setContent] = useState<string>("");
 
@@ -28,9 +28,9 @@ const Markdown = (props: Props) => {
 
   return (
     <Container>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <Markdown>{content}</Markdown>
     </Container>
   );
 };
 
-export default Markdown;
+export default MarkdownComponent;

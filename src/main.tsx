@@ -5,7 +5,7 @@ import ErrorPage from "./pages/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About";
 import "./index.css";
-import Markdown from "./pages/Markdown";
+import MarkdownComponent from "./pages/Markdown";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/:markdown",
-    element: <Markdown />,
+    element: <MarkdownComponent />,
   },
   {
     path: "*",
