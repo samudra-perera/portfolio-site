@@ -34,7 +34,7 @@ const MarkdownComponent = () => {
             h1: {
               component: "h1",
               props: {
-                className: "text-3xl text-slate-100 font-bold my-4",
+                className: "text-3xl text-slate-100 font-bold my-6",
               },
             },
             h2: {
@@ -43,10 +43,22 @@ const MarkdownComponent = () => {
                 className: "text-2xl text-slate-100 font-bold my-4",
               },
             },
+            h3: {
+              component: "h3",
+              props: {
+                className: "text-xl text-slate-100 font-bold my-4",
+              },
+            },
             p: {
               component: "p",
               props: {
-                className: "text-slate-100",
+                className: "text-slate-100 font-light",
+              },
+            },
+            a: {
+              component: "a",
+              props: {
+                className: "text-sky-300 underline pt-4",
               },
             },
           },
