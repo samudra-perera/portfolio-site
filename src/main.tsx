@@ -20,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/:markdown",
     element: <MarkdownComponent />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/now",

@@ -59,6 +59,13 @@ const MarkdownComponent = () => {
               component: "a",
               props: {
                 className: "text-sky-300 underline pt-4",
+                target: "_blank",
+              },
+            },
+            img: {
+              component: "img",
+              props: {
+                className: " w-3/4 rounded-sm my-4",
               },
             },
           },

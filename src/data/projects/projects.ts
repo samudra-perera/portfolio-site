@@ -20,7 +20,7 @@ const projectData = [
   },
   {
     id: 4,
-    name: "UofT CliamteHacks",
+    name: "UofT Climate Hacks",
     url: "Climate2024",
     description:
       "Climate forecasting model for the city of Toronto (3rd place winner)",

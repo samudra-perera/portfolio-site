@@ -4,7 +4,7 @@
 
 ## How it was built
 
-In graph theory, a vertex cover is a set of vertices that includes at least one endpoint of every edge in a graph. Calculating the minimum vertex cover is a NP Hard problem and this was a doozy of a program to write.
+In graph theory, a [vertex cover](https://en.wikipedia.org/wiki/Vertex_cover#:~:text=In%20graph%20theory%2C%20a%20vertex,every%20edge%20of%20the%20graph.) is a set of vertices that includes at least one endpoint of every edge in a graph. Calculating the minimum vertex cover is a NP Hard problem and this was a doozy of a program to write. Outlined below are the subprograms I wrote to tackle this problem.
 
 ### 1. Street Database - Python Process
 

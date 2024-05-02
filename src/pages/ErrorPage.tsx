@@ -1,7 +1,12 @@
-type Props = {};
+import BackToMainButton from "../components/BackToMainButton";
+import Container from "../components/Container";
 
-const ErrorPage = (props: Props) => {
-  return <div>ErrorPage</div>;
+const ErrorPage = () => {
+  return (
+    <Container>
+      <BackToMainButton />
+    </Container>
+  );
 };
 
 export default ErrorPage;
