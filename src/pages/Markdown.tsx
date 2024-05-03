@@ -50,6 +50,12 @@ const MarkdownComponent = () => {
                 className: "text-xl text-slate-100 font-bold my-4",
               },
             },
+            h4: {
+              component: "h4",
+              props: {
+                className: "text-lg text-slate-100 font-bold mt-4 mb-2",
+              },
+            },
             p: {
               component: "p",
               props: {
@@ -78,7 +84,7 @@ const MarkdownComponent = () => {
             pre: {
               component: "pre",
               props: {
-                className: "bg-zinc-700 text-xs my-6 p-4",
+                className: "text-xs my-6",
               },
             },
           },
