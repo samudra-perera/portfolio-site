@@ -1,10 +1,10 @@
 # Portfolio Site
 
-I finally got around to rebuilding my portfolio site. My first time around, did not go as well as I hoped. You can take a look at that [repo here](https://github.com/samudra-perera/React-Portfolio-Site/tree/main/portfolio-site) (2 years ago). I was heavily inspired by Rory Flint's simple website design for my own. It was straight to the point and everything I wanted out of my own portfolio site.
+I finally got around to rebuilding my portfolio site. The first time around, did not go as well as I hoped. You can take a look at that [repo here](https://github.com/samudra-perera/React-Portfolio-Site/tree/main/portfolio-site) (2 years ago). I was heavily inspired by Rory Flint's simple website design for my own. It was straight to the point and everything I wanted out of my own portfolio site.
 
 ## Tech Stack
 
-This site was built using TypeScript, React, and Vite with Tailwind used to style the frontend.
+This site was built using TypeScript, React, and Vite with Tailwind used for styling.
 
 ## Something Interesting
 
