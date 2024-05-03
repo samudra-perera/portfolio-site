@@ -84,7 +84,7 @@ const MarkdownComponent = () => {
             pre: {
               component: "pre",
               props: {
-                className: "text-xs my-6",
+                className: "text-xs my-6 whitespace-pre-wrap",
               },
             },
           },
