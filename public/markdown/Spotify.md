@@ -21,6 +21,6 @@ This project was built in a group of 6 using strict aglie methods. We followed t
 
 The application works great, but it looks horrible.
 
-### Demo
+## Demo
 
 See a demo video on the usage [here](https://gyazo.com/20815630e27f62dcc32f9f2580f5d07a)

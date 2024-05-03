@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Container from "../components/Container";
-import { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import BackToMainButton from "../components/BackToMainButton";
+import SyntaxHighlightedCode from "../utils/SyntaxHighligher";
 
 const MarkdownComponent = () => {
   const { markdown } = useParams();
@@ -66,6 +67,18 @@ const MarkdownComponent = () => {
               component: "img",
               props: {
                 className: " w-3/4 rounded-sm my-4",
+              },
+            },
+            code: {
+              component: SyntaxHighlightedCode,
+              props: {
+                className: "text-slate-100",
+              },
+            },
+            pre: {
+              component: "pre",
+              props: {
+                className: "bg-zinc-700 text-xs my-6 p-4",
               },
             },
           },

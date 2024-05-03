@@ -9,3 +9,33 @@ This site was built using TypeScript, React, and Vite with Tailwind used to styl
 ## Something Interesting
 
 All the Projects and Writing pages are written in markdown then rendered into HTML with tailwind styles by the Markdown.tsx component. This was done using [markdown-to-jsx](https://markdown-to-jsx.quantizor.dev/).
+
+```javascript
+const MarkdownComponent = () => {
+  const { markdown } = useParams();
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    const markdownURL = `/link to markdown`;
+
+    fetch(markdownURL)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch md file");
+        }
+        return res.text();
+      })
+      .then((text) => setContent(text))
+      .catch((err) => {
+        console.error("Error fetching markdown", err);
+        setContent("Failed to load the content");
+      });
+  }, [markdown]);
+
+  return (
+    <Container>
+      <Markdown>{content}</Markdown>
+    </Container>
+  );
+};
+```
