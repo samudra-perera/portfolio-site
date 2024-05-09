@@ -1,5 +1,12 @@
 const projectData = [
   {
+    id: 8,
+    name: "The Daily Stoic",
+    url: "stoic",
+    description:
+      "Displays the current day's page from the Daily Stoic by Ryan Holiday",
+  },
+  {
     id: 7,
     name: "Portfolio Site",
     url: "portfolio",
