@@ -59,7 +59,7 @@ const MarkdownComponent = () => {
             p: {
               component: "p",
               props: {
-                className: "text-slate-100 font-light",
+                className: "text-slate-100 font-light my-3",
               },
             },
             a: {
@@ -85,6 +85,12 @@ const MarkdownComponent = () => {
               component: "pre",
               props: {
                 className: "text-xs my-6 whitespace-pre-wrap",
+              },
+            },
+            span: {
+              component: "span",
+              props: {
+                className: "text-xs text-slate-300 mb-10",
               },
             },
           },
