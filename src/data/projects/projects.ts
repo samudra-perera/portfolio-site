@@ -1,5 +1,11 @@
 const projectData = [
   {
+    id: 9,
+    name: "Hawk Hacks 2024 - Winner Best Use Case",
+    url: "HawkHacks",
+    description: "Smart contracts to verify employment",
+  },
+  {
     id: 8,
     name: "The Daily Stoic",
     url: "stoic",
