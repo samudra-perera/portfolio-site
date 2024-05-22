@@ -17,3 +17,7 @@ When the employer validates the request a NFT is minted and sent to the wallet o
 ## Results
 
 Amongst over 900 participants and over 160 teams our team was able to secure the best use case from the judges. Our win came with a $1700 cash prize so that was a huge bonus.
+
+### Team
+
+Huge shout to my teammates Mevan Solanga, Sheldon Lewis and Vansh Jain for grinding 36 hours with me and believing in this idea from start to finish.
