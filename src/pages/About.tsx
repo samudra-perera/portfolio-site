@@ -3,7 +3,7 @@ import BackToMainButton from "../components/BackToMainButton";
 import Container from "../components/Container";
 
 const AboutLinks = [
-  { name: "Resume", href: "/Samudra_Perera_Resume_2024.pdf" },
+  { name: "Resume", href: "/Samudra_Resume.pdf" },
   { name: "Github", href: "https://github.com/samudra-perera" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/samudraperera/" },
   { name: "Twitter", href: "https://twitter.com/theRealSamudra" },
