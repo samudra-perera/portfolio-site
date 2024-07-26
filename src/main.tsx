@@ -7,6 +7,7 @@ import About from "./pages/About";
 import "./index.css";
 import MarkdownComponent from "./pages/Markdown";
 import Now from "./pages/Now";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </React.StrictMode>,
 );
