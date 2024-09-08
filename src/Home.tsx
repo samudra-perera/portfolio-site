@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import { useTheme } from "./context/ThemeContext.tsx";
 import Container from "./components/Container";
 import ProjectsList from "./components/ProjectsList";
 import WritingList from "./components/WritingList";
 import ToggleTheme from "./components/ToggleTheme";
 
 const Home = () => {
+  const { backgroundTheme, setBackgroundTheme, accentTheme, setAccentTheme } =
+    useTheme();
   return (
     <Container>
       <div className="md:flex items-center justify-between pb-8">
