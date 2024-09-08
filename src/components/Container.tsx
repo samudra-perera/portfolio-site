@@ -1,11 +1,17 @@
+import { useTheme } from "../context/ThemeContext";
+
 type Props = {
   children: React.ReactNode;
-  theme: string;
 };
 
-const Container = ({ children, theme }: Props) => {
+const Container = ({ children }: Props) => {
+  const { backgroundTheme } = useTheme();
+  console.log(backgroundTheme);
+
   return (
-    <div className={`bg-beige-${theme} min-h-screen flex justify-center`}>
+    <div
+      className={`bg-beige-${backgroundTheme} min-h-screen flex justify-center`}
+    >
       <div className="max-w-3xl p-4 py-14">{children}</div>
     </div>
   );

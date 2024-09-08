@@ -2,25 +2,35 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontFamily: {
-      sans: ['"IBM Plex Mono"', "Courier New", "monospace"],
-    },
     extend: {
+      fontFamily: {
+        sans: ['"IBM Plex Mono"', "Courier New", "monospace"],
+      },
       colors: {
         beige: {
-          light: "#D5D1CC",
-          medium: "#E9E6D0",
-          dark: "#CCC4A1",
+          light: "#D5D1CC", // Light beige color
+          medium: "#E9E6D0", // Medium beige color
+          dark: "#EBE5CE", // Dark beige
         },
         accent: {
-          red: "#ff6b6b",
-          blue: "#4c7cf2",
-          green: "#4caf50",
-          orange: "#ff9800",
-          purple: "#9c27b0",
+          red: "#ff6b6b", // Red accent color
+          blue: "#4c7cf2", // Blue accent color
+          green: "#4caf50", // Green accent color
+          orange: "#ff9800", // Orange accent color
+          purple: "#9c27b0", // Purple accent color
         },
       },
     },
   },
   plugins: [],
+  safelist: [
+    "bg-beige-light",
+    "bg-beige-medium",
+    "bg-beige-dark",
+    "bg-accent-red",
+    "bg-accent-blue",
+    "bg-accent-green",
+    "bg-accent-orange",
+    "bg-accent-purple",
+  ],
 };
