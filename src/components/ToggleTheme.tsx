@@ -1,41 +1,58 @@
 import { useTheme } from "../context/ThemeContext";
+//TODO: Add function to filter accent theme based on the background theme
 
 const ToggleTheme = () => {
-  const { backgroundTheme, setBackgroundTheme, accentTheme, setAccentTheme } =
-    useTheme();
+  const { setBackgroundTheme, setAccentTheme } = useTheme();
+
+  // Array of background colors with their respective keys
+  const backgroundColors = [
+    { name: "Light", color: "light", className: "bg-beige-light" },
+    { name: "Medium", color: "medium", className: "bg-beige-medium" },
+    { name: "Dark", color: "dark", className: "bg-beige-dark" },
+  ];
+
+  // Array of accent colors with their respective keys
+  const accentColors = [
+    { name: "Red", color: "red", className: "bg-accent-red" },
+    { name: "Blue", color: "blue", className: "bg-accent-blue" },
+    { name: "Green", color: "green", className: "bg-accent-green" },
+    { name: "Orange", color: "orange", className: "bg-accent-orange" },
+    { name: "Purple", color: "purple", className: "bg-accent-purple" },
+  ];
+
+  const circleButtonClasses =
+    "w-6 h-6 rounded-full border border-gray-300 cursor-pointer";
+
+  const accentButtonClasses = "w-4 h-4 rounded-full cursor-pointer";
 
   return (
-    <div className="p-4">
+    <div className="p-4 text-xs">
       <div>
         <p>Select Background Theme:</p>
-        <button onClick={() => setBackgroundTheme("light")} className="btn">
-          Light
-        </button>
-        <button onClick={() => setBackgroundTheme("medium")} className="btn">
-          Medium
-        </button>
-        <button onClick={() => setBackgroundTheme("dark")} className="btn">
-          Dark
-        </button>
+        <div className="flex space-x-2 mt-2">
+          {backgroundColors.map((bg) => (
+            <button
+              key={bg.color}
+              onClick={() => setBackgroundTheme(bg.color)}
+              className={`${circleButtonClasses} ${bg.className}`}
+              title={bg.name}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="mt-4">
         <p>Select Accent Theme:</p>
-        <button onClick={() => setAccentTheme("red")} className="btn">
-          Red
-        </button>
-        <button onClick={() => setAccentTheme("blue")} className="btn">
-          Blue
-        </button>
-        <button onClick={() => setAccentTheme("green")} className="btn">
-          Green
-        </button>
-        <button onClick={() => setAccentTheme("orange")} className="btn">
-          Orange
-        </button>
-        <button onClick={() => setAccentTheme("purple")} className="btn">
-          Purple
-        </button>
+        <div className="flex space-x-2 mt-2 items-center">
+          {accentColors.map((accent) => (
+            <button
+              key={accent.color}
+              onClick={() => setAccentTheme(accent.color)}
+              className={`${accentButtonClasses} ${accent.className}`}
+              title={accent.name}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

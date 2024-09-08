@@ -12,7 +12,7 @@ const Container = ({ children }: Props) => {
     <div
       className={`bg-beige-${backgroundTheme} min-h-screen flex justify-center`}
     >
-      <div className="max-w-3xl p-4 py-14">{children}</div>
+      <div className="max-w-xl p-4 py-14">{children}</div>
     </div>
   );
 };
