@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         sans: ['"IBM Plex Mono"', "Courier New", "monospace"],
       },
+      fontSize: {
+        xxxs: ".5rem",
+        xxs: ".625rem",
+      },
       colors: {
         beige: {
           light: "#D5D1CC", // Light beige color
