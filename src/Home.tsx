@@ -3,18 +3,19 @@ import { useTheme } from "./context/ThemeContext.tsx";
 import Container from "./components/Container";
 import ProjectsList from "./components/ProjectsList";
 import WritingList from "./components/WritingList";
-import ToggleTheme from "./components/ToggleTheme";
+import ToggleTheme from "./components/ToggleTheme.tsx";
 
 const Home = () => {
   const { accentTheme } = useTheme();
   return (
     <Container>
       <div className="md:flex items-center justify-between pb-8">
-        <h2
-          className={`font-bold text-2xl tracking-wide text-accent-${accentTheme}`}
-        >
-          Samudra Perera*
-        </h2>
+        <div className="flex items-center">
+          <h2 className={`font-bold text-2xl tracking-wide text-black`}>
+            Samudra Perera^^
+          </h2>
+          <ToggleTheme />
+        </div>
         <div className="flex space-x-2">
           <a href="https://github.com/samudra-perera">
             <svg
@@ -42,10 +43,9 @@ const Home = () => {
               <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
             </svg>
           </a>
-          <ToggleTheme />
         </div>
       </div>
-      <p className={`text-black pb-2 text-xs`}>
+      <p className={`text-black pb-2 text-xxs`}>
         Software engineer, creative thinker and maker of things. I write about
         my journey in technology,{" "}
         <a
@@ -64,13 +64,9 @@ const Home = () => {
           More about me.
         </Link>
       </p>
-      <h3 className={`text-accent-${accentTheme} text-lg font-bold pb-2`}>
-        Projects
-      </h3>
+      <h3 className={`text-black font-bold pb-2`}>Projects</h3>
       <ProjectsList />
-      <h3 className={`text-accent-${accentTheme} text-lg font-bold pb-2`}>
-        Writing
-      </h3>
+      <h3 className={`text-black font-bold pb-2`}>Writing</h3>
       <WritingList />
     </Container>
   );

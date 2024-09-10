@@ -5,9 +5,9 @@ import ProjectData from "../data/projects/projects";
 const ProjectsList = () => {
   const { accentTheme } = useTheme();
   return (
-    <ul className="pb-8 pl-8 list-disc text-slate-100">
+    <ul className="pb-8 pl-8">
       {ProjectData.map((project) => (
-        <li className="text-black text-xs font-light p-1">
+        <li className="text-black text-xxs font-light">
           <Link
             className={`decoration-accent-${accentTheme} underline pr-1 font-normal`}
             key={project.name}
@@ -15,8 +15,6 @@ const ProjectsList = () => {
           >
             {project.name}
           </Link>
-          {" - "}
-          {project.description}
         </li>
       ))}
     </ul>

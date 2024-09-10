@@ -5,15 +5,16 @@ import writingData from "../data/writing/writing";
 const WritingList = () => {
   const { accentTheme } = useTheme();
   return (
-    <ul className="pb-8 pl-8 list-disc text-slate-100">
+    <ul className="pb-8 pl-8 text-black">
       {writingData.map((topic) => (
-        <li className="text-black text-xs p-1 font-light">
+        <li className="text-black text-xxs font-light flex justify-between">
           <Link
             className={`decoration-accent-${accentTheme} underline pr-1 font-normal`}
             to={`${topic.url}`}
           >
             {topic.name}
           </Link>
+          {topic.date}
         </li>
       ))}
     </ul>

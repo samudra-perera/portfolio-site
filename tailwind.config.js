@@ -12,16 +12,17 @@ module.exports = {
       },
       colors: {
         beige: {
-          light: "#D5D1CC", // Light beige color
-          medium: "#E9E6D0", // Medium beige color
-          dark: "#EBE5CE", // Dark beige
+          light: "#F4F4F4", // Light beige color
+          medium: "#EBE5CE", // Medium beige color
+          dark: "#FFF8DF", // Dark beige
         },
         accent: {
-          red: "#ff6b6b", // Red accent color
+          wood: "#A0522D", // wood accent color
           blue: "#4c7cf2", // Blue accent color
           green: "#4caf50", // Green accent color
           orange: "#ff9800", // Orange accent color
           purple: "#9c27b0", // Purple accent color
+          sienna: "#A0522D",
         },
       },
     },
@@ -31,15 +32,17 @@ module.exports = {
     "bg-beige-light",
     "bg-beige-medium",
     "bg-beige-dark",
-    "text-accent-red",
+    "text-accent-wood",
     "text-accent-blue",
     "text-accent-green",
     "text-accent-orange",
     "text-accent-purple",
-    "decoration-accent-red",
+    "text-accent-sienna",
+    "decoration-accent-wood",
     "decoration-accent-blue",
     "decoration-accent-green",
     "decoration-accent-orange",
     "decoration-accent-purple",
+    "decoration-accent-sienna",
   ],
 };
