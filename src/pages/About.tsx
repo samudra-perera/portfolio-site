@@ -10,7 +10,7 @@ const AboutLinks = [
   { name: "Twitter", href: "https://twitter.com/theRealSamudra" },
 ];
 
-Interface AboutProps {
+interface AboutProps {
   children: React.ReactNode;
 }
 
