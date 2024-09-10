@@ -13,7 +13,7 @@ const ProjectsList = () => {
             to={`/${project.url}`}
           >
             <span
-              className={`relative z-10 underline decoration-accent-${accentTheme} pr-1 group-hover:text-white`}
+              className={`relative z-10 underline transition-colors duration-500 decoration-accent-${accentTheme} pr-1 group-hover:text-white`}
             >
               {project.name}
             </span>

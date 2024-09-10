@@ -11,7 +11,7 @@ const AboutLinks = [
 ];
 
 const AboutParagraphs = ({ children }) => {
-  return <p className="text-black text-xs pb-4">{children}</p>;
+  return <p className="text-black text-xxs pb-4">{children}</p>;
 };
 
 const About = () => {

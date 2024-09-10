@@ -5,7 +5,7 @@ type Props = {
 const Container = ({ children }: Props) => {
   return (
     <div className="min-h-screen flex justify-center">
-      <div className="bg-beige-light max-w-xl p-6 py-14 mt-8 mb-8 mr-96 h-fit">
+      <div className="bg-beige-light max-w-xl p-6 py-14 mt-8 mb-8 lg:mr-96 md:mr-40 sm:mr-0 h-fit">
         {children}
       </div>
     </div>
