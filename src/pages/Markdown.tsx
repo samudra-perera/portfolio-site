@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useTheme } from "../context/ThemeContext";
 import Container from "../components/Container";
 import Markdown from "markdown-to-jsx";
 import BackToMainButton from "../components/BackToMainButton";
@@ -7,6 +8,7 @@ import SyntaxHighlightedCode from "../utils/SyntaxHighligher";
 
 const MarkdownComponent = () => {
   const { markdown } = useParams();
+  const { accentTheme } = useTheme();
   const [content, setContent] = useState<string>("");
 
   useEffect(() => {
@@ -26,6 +28,14 @@ const MarkdownComponent = () => {
       });
   }, [markdown]);
 
+  const h1Styles = `text-lg black font-bold my-2`;
+  const h2Styles = `text-md black font-bold`;
+  const h3Styles = `text-sm black font-bold`;
+  const h4Styles = `text-xs black font-bold`;
+  const pStyles = `text-black font-light my-1 text-xxs pb-1 leading-tight`;
+  const aStyles = `text-black text-xxs font-semibold decoration-accent-${accentTheme} underline pt-2 mb-2`;
+  const spanStyles = `text-accent-${accentTheme} text-xxs font-bold`;
+
   return (
     <Container>
       <BackToMainButton />
@@ -35,44 +45,44 @@ const MarkdownComponent = () => {
             h1: {
               component: "h1",
               props: {
-                className: "text-3xl text-slate-100 font-bold my-6",
+                className: h1Styles,
               },
             },
             h2: {
               component: "h2",
               props: {
-                className: "text-2xl text-slate-100 font-bold my-4",
+                className: h2Styles,
               },
             },
             h3: {
               component: "h3",
               props: {
-                className: "text-xl text-slate-100 font-bold my-4",
+                className: h3Styles,
               },
             },
             h4: {
               component: "h4",
               props: {
-                className: "text-lg text-slate-100 font-bold mt-4 mb-2",
+                className: h4Styles,
               },
             },
             p: {
               component: "p",
               props: {
-                className: "text-slate-100 font-light my-3",
+                className: pStyles,
               },
             },
             a: {
               component: "a",
               props: {
-                className: "text-sky-300 underline pt-4",
+                className: aStyles,
                 target: "_blank",
               },
             },
             img: {
               component: "img",
               props: {
-                className: " w-3/4 rounded-sm my-4",
+                className: " w-3/4 rounded-sm my-2",
               },
             },
             code: {
@@ -90,7 +100,7 @@ const MarkdownComponent = () => {
             span: {
               component: "span",
               props: {
-                className: "text-xs text-slate-300 mb-10",
+                className: spanStyles,
               },
             },
           },

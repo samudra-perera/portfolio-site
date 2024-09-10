@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const BackToMainButton = () => {
+  const navigate = useNavigate();
+
   return (
-    <Link to="/" className="text-slate-300 text-sm">
-      <span>&#8592;</span> Samudra Perera*
-    </Link>
+    <button
+      onClick={() => navigate(-1)}
+      className="text-black font-semibold text-xs"
+    >
+      <span>&#8592;</span> Samudra Perera
+    </button>
   );
 };
 
