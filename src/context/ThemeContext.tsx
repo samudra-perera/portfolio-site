@@ -8,8 +8,10 @@ import {
 
 // Define the shape of the context
 interface ThemeContextProps {
-  theme: string;
-  toggleTheme: () => void;
+  backgroundTheme: string;
+  accentTheme: string;
+  setBackgroundTheme: (theme: string) => void;
+  setAccentTheme: (theme: string) => void;
 }
 
 // Create the context with a default value
@@ -20,23 +22,38 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState<string>(
-    localStorage.getItem("theme") || "light",
+  const [backgroundTheme, setBackgroundTheme] = useState<string>(
+    localStorage.getItem("backgroundTheme") || "dark",
+  );
+  const [accentTheme, setAccentTheme] = useState<string>(
+    localStorage.getItem("accentTheme") || "red",
   );
 
   useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove(theme === "dark" ? "light" : "dark");
-    root.classList.add(theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+    // Update background theme class
+    root.classList.remove("light", "medium", "dark");
+    root.classList.add(backgroundTheme);
+
+    // Save to localStorage
+    localStorage.setItem("backgroundTheme", backgroundTheme);
+  }, [backgroundTheme]);
+
+  useEffect(() => {
+    // Save accent theme to localStorage
+    localStorage.setItem("accentTheme", accentTheme);
+  }, [accentTheme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{
+        backgroundTheme,
+        accentTheme,
+        setBackgroundTheme,
+        setAccentTheme,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );

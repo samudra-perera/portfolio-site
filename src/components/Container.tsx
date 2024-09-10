@@ -4,8 +4,10 @@ type Props = {
 
 const Container = ({ children }: Props) => {
   return (
-    <div className="bg-zinc-800 min-h-screen flex justify-center">
-      <div className="max-w-3xl p-4 py-14">{children}</div>
+    <div className="min-h-screen flex justify-center">
+      <div className="bg-beige-light max-w-xl p-6 py-14 mt-8 mb-8 lg:mr-96 md:mr-40 sm:mr-0 h-fit">
+        {children}
+      </div>
     </div>
   );
 };
