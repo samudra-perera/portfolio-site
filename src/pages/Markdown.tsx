@@ -32,7 +32,7 @@ const MarkdownComponent = () => {
   const h2Styles = `text-md black font-bold`;
   const h3Styles = `text-sm black font-bold`;
   const h4Styles = `text-xs black font-bold`;
-  const pStyles = `text-black font-light my-1 text-xxs pb-1`;
+  const pStyles = `text-black font-light my-1 text-xxs pb-1 leading-tight`;
   const aStyles = `text-black text-xxs font-semibold decoration-accent-${accentTheme} underline pt-2 mb-2`;
   const spanStyles = `text-accent-${accentTheme} text-xxs font-bold`;
 

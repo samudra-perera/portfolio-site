@@ -51,7 +51,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <p className={`text-black pb-2 text-xxs`}>
+      <p className={`text-black pb-2 text-xxs leading-tight`}>
         Software engineer, creative thinker and maker of things. I write about
         my journey in technology,{" "}
         <a
