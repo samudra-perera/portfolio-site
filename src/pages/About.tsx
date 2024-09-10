@@ -10,7 +10,11 @@ const AboutLinks = [
   { name: "Twitter", href: "https://twitter.com/theRealSamudra" },
 ];
 
-const AboutParagraphs = ({ children }) => {
+Interface AboutProps {
+  children: React.ReactNode;
+}
+
+const AboutParagraphs: React.FC<AboutProps> = ({ children }) => {
   return <p className="text-black text-xxs pb-4">{children}</p>;
 };
 
