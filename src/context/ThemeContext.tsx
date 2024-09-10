@@ -26,7 +26,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
     localStorage.getItem("backgroundTheme") || "dark",
   );
   const [accentTheme, setAccentTheme] = useState<string>(
-    localStorage.getItem("accentTheme") || "red",
+    localStorage.getItem("accentTheme") || "wood",
   );
 
   useEffect(() => {
