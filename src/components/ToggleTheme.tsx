@@ -1,5 +1,4 @@
 import { useTheme } from "../context/ThemeContext";
-//TODO: Add function to filter accent theme based on the background theme
 
 const ToggleTheme = () => {
   const { setAccentTheme } = useTheme();
@@ -17,7 +16,8 @@ const ToggleTheme = () => {
     },
   ];
 
-  const accentButtonClasses = "w-2 h-2 rounded-full cursor-pointer";
+  const accentButtonClasses =
+    "w-2 h-2 rounded-full cursor-pointer transition-transform transform duration-300";
 
   return (
     <div className="p-1 text-xs">
@@ -26,7 +26,7 @@ const ToggleTheme = () => {
           <button
             key={accent.color}
             onClick={() => setAccentTheme(accent.color)}
-            className={`${accentButtonClasses} ${accent.className}`}
+            className={`${accentButtonClasses} ${accent.className} hover:scale-125`}
             title={accent.name}
           />
         ))}
