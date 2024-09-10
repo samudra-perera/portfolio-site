@@ -15,7 +15,7 @@ interface AboutProps {
 }
 
 const AboutParagraphs: React.FC<AboutProps> = ({ children }) => {
-  return <p className="text-black text-xxs pb-4">{children}</p>;
+  return <p className="text-black text-xxs pb-4 leading-tight">{children}</p>;
 };
 
 const About = () => {
@@ -24,7 +24,7 @@ const About = () => {
     <Container>
       <BackToMainButton />
       <h2
-        className={`font-bold text-2xl tracking-wide text-accent-${accentTheme} pb-8 pt-4`}
+        className={`font-bold text-2xl tracking-wide text-accent-${accentTheme} pb-4 pt-4`}
       >
         About Me
       </h2>
