@@ -18,11 +18,10 @@ module.exports = {
         },
         accent: {
           wood: "#A0522D", // wood accent color
-          blue: "#4c7cf2", // Blue accent color
-          green: "#4caf50", // Green accent color
-          orange: "#ff9800", // Orange accent color
-          purple: "#9c27b0", // Purple accent color
-          sienna: "#A0522D",
+          charcoal: "#333333", // Blue accent color
+          green: "#A7C080", // Green accent color
+          orange: "#D2691E", // Orange accent color
+          rusticBlue: "#5C6BC0",
         },
       },
     },
@@ -33,16 +32,14 @@ module.exports = {
     "bg-beige-medium",
     "bg-beige-dark",
     "text-accent-wood",
-    "text-accent-blue",
+    "text-accent-charcoal",
     "text-accent-green",
     "text-accent-orange",
-    "text-accent-purple",
-    "text-accent-sienna",
+    "text-accent-rusticBlue",
     "decoration-accent-wood",
-    "decoration-accent-blue",
+    "decoration-accent-charcoal",
     "decoration-accent-green",
     "decoration-accent-orange",
-    "decoration-accent-purple",
-    "decoration-accent-sienna",
+    "decoration-accent-rusticBlue",
   ],
 };

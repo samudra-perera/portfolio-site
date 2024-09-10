@@ -7,16 +7,20 @@ const ToggleTheme = () => {
   // Array of accent colors with their respective keys
   const accentColors = [
     { name: "wood", color: "wood", className: "bg-accent-wood" },
-    { name: "Blue", color: "blue", className: "bg-accent-blue" },
+    { name: "charcoal", color: "charcoal", className: "bg-accent-charcoal" },
     { name: "Green", color: "green", className: "bg-accent-green" },
     { name: "Orange", color: "orange", className: "bg-accent-orange" },
-    { name: "Purple", color: "purple", className: "bg-accent-purple" },
+    {
+      name: "rusticBlue",
+      color: "rusticBlue",
+      className: "bg-accent-rusticBlue",
+    },
   ];
 
   const accentButtonClasses = "w-2 h-2 rounded-full cursor-pointer";
 
   return (
-    <div className="p-4 text-xs">
+    <div className="p-1 text-xs">
       <div className="flex space-x-1 items-center">
         {accentColors.map((accent) => (
           <button

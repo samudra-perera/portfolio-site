@@ -12,7 +12,7 @@ const Home = () => {
       <div className="md:flex items-center justify-between pb-8">
         <div className="flex items-center">
           <h2 className={`font-bold text-2xl tracking-wide text-black`}>
-            Samudra Perera^^
+            Samudra Perera
           </h2>
           <ToggleTheme />
         </div>
